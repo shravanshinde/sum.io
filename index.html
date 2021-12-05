@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>CHECK CONSOLE FOR OUTPUT </h2>
+    <Script>
+        let a = function(param1) {
+            let b = function(param2) {
+                let c = function(param3) {
+                    let add = param1 + param2 + param3;
+                    console.log(add);
+                }
+                return c;
+            }
+            return b;
+
+        }
+        a(15)(30)(45);
+    </script>
+</body>
+
+</html>
